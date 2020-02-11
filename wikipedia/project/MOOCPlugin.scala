@@ -1,5 +1,7 @@
 package ch.epfl.lamp
 
+import sbt._
+
 /**
  * Settings shared by the student build and the teacher build
  */

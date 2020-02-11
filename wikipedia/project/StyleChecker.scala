@@ -1,5 +1,9 @@
 package ch.epfl.lamp.grading
 
+import java.io.{ByteArrayOutputStream, PrintStream, File}
+import org.scalastyle._
+import com.typesafe.config.ConfigFactory
+
 object StyleChecker {
   val maxResult = 100
 

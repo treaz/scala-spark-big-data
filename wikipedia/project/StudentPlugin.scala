@@ -1,5 +1,17 @@
 package ch.epfl.lamp
 
+import sbt._
+import Keys._
+import java.io.{File, FileInputStream, IOException}
+
+import ch.epfl.lamp.grading.StyleChecker
+import org.apache.commons.codec.binary.Base64
+
+import scalaj.http._
+import scala.util.{Failure, Success, Try}
+import MOOCPlugin.autoImport._
+import play.api.libs.json.{Json, JsObject, JsPath}
+
 case class AssignmentInfo(
                            key: String,
                            itemId: String,
