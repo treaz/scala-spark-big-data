@@ -1,5 +1,8 @@
 package wikipedia
 
+import org.apache.spark._
+import org.apache.spark.rdd.RDD
+
 case class WikipediaArticle(title: String, text: String) {
   /**
    * @return Whether the text of this article mentions `lang` or not
